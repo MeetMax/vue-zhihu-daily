@@ -10,5 +10,10 @@ export default [
 		path:'/hello',
 		component:App.components.Hello,
 		name:'hello'
+	},
+	{
+		path:'/slide',
+		component:App.components.Slide,
+		name:'slide'
 	}
 ]

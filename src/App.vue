@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
     <router-view></router-view>
   </div>
 </template>
@@ -8,11 +7,13 @@
 <script>
 import Hello from './components/Hello'
 import vHeader from './components/header'
+import Slide from './view/slide'
 export default {
   name: 'app',
   components: {
     Hello,
-    vHeader
+    vHeader,
+    Slide
   }
 }
 </script>
