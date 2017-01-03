@@ -11,6 +11,8 @@ import Slide from './components/slide';
 import Side from './components/sidebar.vue';
 import Index from './view/index.vue';
 import News from './components/news-list.vue';
+import BeforeNews from './components/before-news.vue';
+import vDetails from './view/details.vue';
 export default {
   name: 'app',
   components: {
@@ -19,7 +21,9 @@ export default {
     Slide,
     Side,
     Index,
-    News
+    News,
+    BeforeNews,
+    vDetails
   }
 }
 </script>

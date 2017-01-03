@@ -33,11 +33,8 @@
 </script>
 <style lang="scss" scoped  rel="stylesheet/scss">
 .sidebar-box{
-  position: fixed;
   width: 60vw;
   height: 100%;
-  left: -60VW;
-  top: 0;
   padding:10px;
   box-sizing: border-box;
   background: #f9f9f9;

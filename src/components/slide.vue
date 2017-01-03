@@ -3,7 +3,7 @@
     	<div class="swiper-wrapper">
         <div class="swiper-slide"  v-for="item in news"
              :style="{background: 'url('+replace(item.image)+') no-repeat',
-          backgroundSize:'100%',backgroundPosition: '50%'}">
+          backgroundSize:'100%',backgroundPosition:'50%'}">
         </div>
 	    </div>
 	    <div class="swiper-pagination"></div>
@@ -36,7 +36,6 @@ import Swiper from 'swiper';
 	    });
 	    fetchNewsById(this.id).then(data=>{
 	    	this.news=data.top_stories;
-	    	console.log(data);
 	    })
 	  },
     methods:{

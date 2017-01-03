@@ -11,6 +11,16 @@ export default [
     component:App.components.News,
     name:'news-list'
   },
+  {
+    path:'/before',
+    component:App.components.BeforeNews,
+    name:'before-news'
+  },
+  {
+    path:'/details/:id',
+    component:App.components.vDetails,
+    name:'details'
+  },
 	{
 		path:'/header',
 		component:App.components.vHeader,

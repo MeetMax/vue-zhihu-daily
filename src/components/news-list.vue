@@ -2,10 +2,12 @@
   <div  class="latest-news">
     <ul>
       <li v-for="item in list" class="clearfix">
+        <router-link :to="{name:'details',params:{id:item.id}}">
         <p>{{item.title}}</p>
         <div class="thumb">
           <img :src="item.images[0].replace(/http\w{0,1}:\/\/p/g, 'https://images.weserv.nl/?url=p')">
         </div>
+        </router-link>
       </li>
     </ul>
   </div>

@@ -1,7 +1,8 @@
 <template>
 	 <header id="header">
-     <i class="icon iconfont icon-fenlei"></i>
+     <i class="icon iconfont icon-fenlei" @click="doShow"></i>
      {{title}}
+     <i class="icon iconfont icon-icon"></i>
    </header>
 </template>
 <script>
@@ -10,9 +11,20 @@
     props:['headerTitle'],
 	  data () {
 	    return {
-	        title:this.headerTitle
+	        title:this.headerTitle,
+          show:false
 	    }
-	  }
+	  },
+    mounted(){
+
+    },
+    methods:{
+        doShow(){
+          this.show=true;
+          this.$emit('child-show',this.show);
+
+      }
+    }
 	}
 </script>
 <style lang="scss" rel="stylesheet/scss" scoped>
@@ -28,13 +40,20 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 15;
   .icon-fenlei{
     position: absolute;
     font-size: 24px;
     display: block;
     left: 15px;
     top: 0;
+  }
+  .icon-icon{
+    position: absolute;
+    font-size: 24px;
+    right: 15px;
+    top: 0;
+    display: block;
   }
 }
 </style>
