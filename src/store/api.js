@@ -21,3 +21,12 @@ export function fetchThemesById(id){
 export function fetchBeforeById(id) {
   return fetch(`/api/4/news/before/${id}`)
 }
+export function fetchExtraById(id) {
+  return fetch(`/api/4/story-extra/${id}`);
+}
+export function fetchLongCommentsById(id) {
+  return fetch(`/api/4/story/${id}/long-comments`);
+}
+export function fetchShortCommentsById(id) {
+  return fetch(`/api/4/story/${id}/short-comments`);
+}

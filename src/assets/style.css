@@ -263,4 +263,37 @@ input::-webkit-inner-spin-button{
 .clearfix {
   zoom: 1;
 }
-body{color:#000;margin:0 auto; font-size:14px; font-family:"Microsoft Yahei";overflow-x:hidden;}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, Sans-serif;
+  background: #fff;
+  padding-top: 0;
+  margin: 0;
+}
+

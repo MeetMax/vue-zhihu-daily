@@ -9,7 +9,7 @@
 	    <div class="swiper-pagination"></div>
 	</div>
 </template>
-<script>
+<script type="text/ecmascript-6">
 import {fetchNewsById} from '../store/api';
 import Swiper from 'swiper';
 	export default {

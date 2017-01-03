@@ -12,7 +12,7 @@
     <div class="mask" :class="{show:isShow}" @click="doHide"></div>
   </div>
 </template>
-<script>
+<script type="text/ecmascript-6">
   import App from '../App.vue';
   import vHeader from '../components/header.vue';
   import Slide from '../components/slide.vue';
@@ -43,7 +43,7 @@
       window.addEventListener('scroll',opacity=>{
         this.opacity=document.body.scrollTop / this.width;
         opacity=this.opacity;
-        document.getElementById('header').style.background=`rgba(0,139,237,${opacity})`;
+        document.getElementById('header').style.background='rgba(0,139,237,'+opacity+')';
         let scrollTop=document.body.scrollTop;
         let scrollBottom=document.body.offsetHeight - document.documentElement.clientHeight;
         if(scrollBottom-scrollTop<100)

@@ -88,10 +88,11 @@
 </script>
 <style lang="scss" rel="stylesheet/scss" scoped>
   .before-news .date{
-    line-height: 30px;
+    line-height:40px;
     text-align: center;
     color: #ffffff;
     background: rgb(0,139,237);
+    font-size: 16px;
   }
   .before-news li{
     padding: 10px;

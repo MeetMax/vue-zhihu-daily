@@ -7,19 +7,14 @@ export default [
     name:'index'
   },
   {
-    path:'/news',
-    component:App.components.News,
-    name:'news-list'
-  },
-  {
-    path:'/before',
-    component:App.components.BeforeNews,
-    name:'before-news'
-  },
-  {
     path:'/details/:id',
     component:App.components.vDetails,
     name:'details'
+  },
+  {
+    path:'/comments/:id',
+    component:App.components.Comments,
+    name:'comments'
   },
 	{
 		path:'/header',

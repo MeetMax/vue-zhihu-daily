@@ -12,7 +12,7 @@
     </ul>
   </div>
 </template>
-<script>
+<script type="text/ecmascript-6">
 import {fetchNewsById} from '../store/api';
 export default{
     name:'news-list',
@@ -33,7 +33,6 @@ export default{
     computed:{
 
     }
-
 }
 </script>
 <style lang="scss" rel="stylesheet/scss" scoped>

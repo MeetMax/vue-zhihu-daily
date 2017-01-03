@@ -5,7 +5,7 @@
      <i class="icon iconfont icon-icon"></i>
    </header>
 </template>
-<script>
+<script type="text/ecmascript-6">
 	export default {
 	  name: 'header',
     props:['headerTitle'],

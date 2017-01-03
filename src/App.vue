@@ -13,6 +13,8 @@ import Index from './view/index.vue';
 import News from './components/news-list.vue';
 import BeforeNews from './components/before-news.vue';
 import vDetails from './view/details.vue';
+import bottomBar from './components/bottom-bar.vue';
+import Comments from './view/comments.vue';
 export default {
   name: 'app',
   components: {
@@ -23,7 +25,9 @@ export default {
     Index,
     News,
     BeforeNews,
-    vDetails
+    vDetails,
+    bottomBar,
+    Comments
   }
 }
 </script>
