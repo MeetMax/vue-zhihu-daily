@@ -3,9 +3,8 @@
   <div class="header">
     {{commentsExtra.comments}}&nbsp;条评论
   </div>
-  <div class="comments-num">{{commentsExtra.long_comments}}&nbsp;条长评</div>
+  <div class="comments-num long-comments">{{commentsExtra.long_comments}}&nbsp;条长评</div>
   <div class="comments-content">
-
     <div class="comments-list clearfix" v-for="(item,index) in longComments.comments">
       <div class="header-img">
         <img :src="String(item.avatar).replace(/http\w{0,1}:\/\/p/g, 'https://images.weserv.nl/?url=p')">
@@ -42,6 +41,7 @@
     </div>
   </div>
 </div>
+  <div class="comments-back"><i class="icon iconfont icon-back" @click="goBack"></i></div>
 </div>
 </template>
 <script type="text/ecmascript-6">
@@ -120,6 +120,9 @@
     border-bottom: 1px solid #eee;
     margin-bottom: 20px;
   }
+  .long-comments{
+    margin-top: 50px;
+  }
   .header{
     height: 50px;
     line-height: 50px;
@@ -127,6 +130,10 @@
     text-align: center;
     font-size: 18px;
     color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
   }
   .comments-list.last{
     border-bottom: none;
@@ -180,6 +187,20 @@
     .comments-num{
       border-top: 1px solid #eee;
     }
-
+  }
+  .comments-back{
+    height: 40px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #3b3b3b;
+    .icon-back{
+      float: left;
+      line-height: 40px;
+      margin-left:15px ;
+      color: #fff;
+      font-size: 24px;
+    }
   }
 </style>

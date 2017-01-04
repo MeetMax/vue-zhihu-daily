@@ -21,7 +21,7 @@
     methods:{
         doShow(){
           this.show=true;
-          this.$emit('child-show',this.show);
+          this.$emit('child-show');
 
       }
     }

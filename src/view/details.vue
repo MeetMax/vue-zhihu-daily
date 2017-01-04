@@ -1,10 +1,13 @@
 <template>
 <div class="details">
-  <div class="img-wrap"   :style="{'background-image': 'url('+ String(data.image).replace(/http\w{0,1}:\/\/p/g, 'https://images.weserv.nl/?url=p')}">
+  <div class="img-wrap"  v-if="data.image" :style="{'background-image': 'url('+ String(data.image).replace(/http\w{0,1}:\/\/p/g, 'https://images.weserv.nl/?url=p')}">
     <p class="big-title">{{data.title}}</p>
     <span>图片：{{data.image_source}}</span>
   </div>
-  <div v-show="data.body" v-html="String(data.body).replace(/http\w{0,1}:\/\/p/g, 'https://images.weserv.nl/?url=p')""></div>
+  <div class="no-img" v-else="">
+    <p class="big-title">{{data.title}}</p>
+  </div>
+  <div v-show="data.body" v-html="String(data.body).replace(/http\w{0,1}:\/\/p/g, 'https://images.weserv.nl/?url=p')"></div>
   <BottomBar :id="id"></BottomBar>
 </div>
 </template>
@@ -44,9 +47,9 @@ export default{
     .big-title{
       color: #ffffff;
       position: absolute;
-      bottom: 20px;
+      bottom: 10px;
       width: 100%;
-      font-size: 22px;
+      font-size: 18px;
       padding: 0 15px 0 15px;
       box-sizing: border-box;
       text-align: left;
@@ -63,12 +66,28 @@ export default{
       box-sizing: border-box;
     }
   }
+  .no-img{
+    height: auto;
+    padding: 20px 15px 20px 15px;
+    border-bottom: 5px solid #eee;
+    font-weight: 700;
+    font-size: 20px;
+    box-sizing: border-box;
+    text-align: justify;
+    line-height: 24px;
+    .big-title{
+      color: #000;
+    }
+    span{
+      color: #000;
+    }
+  }
   .main-wrap .content{
     p{
       text-align: left;
     }
   }
-  </style>
+</style>
 <style>
   article,
   aside,
@@ -906,9 +925,7 @@ export default{
     margin: 30px 0;
     border-top-width: 0;
   }
-
-
-  p {
+  .content p {
     margin: 20px 0 !important;
   }
 
@@ -979,8 +996,6 @@ export default{
   .dudu-night .from-column:active {
     background-image: url(http://static.daily.zhihu.com/img/Dark_News_Column_Entrance_Highlight.png);
   }
-
-  //绂佺敤澶撮儴涓嬮潰鐨勫垎闅旂嚎
   .dudu .headline {
     border-bottom: none;
   }

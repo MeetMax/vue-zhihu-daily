@@ -16,7 +16,10 @@ export function fetchThemes(){
   return fetch(`/api/4/themes`);
 }
 export function fetchThemesById(id){
-  return fetch(`/api/4/themes/${id}`);
+  return fetch(`/api/4/theme/${id}`);
+}
+export function fetchBeforeThemesById(theme_id,id){
+  return fetch(`/api/4/theme/${theme_id}/before/${id}`);
 }
 export function fetchBeforeById(id) {
   return fetch(`/api/4/news/before/${id}`)

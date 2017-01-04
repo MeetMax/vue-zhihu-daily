@@ -12,6 +12,11 @@ export default [
     name:'details'
   },
   {
+    path:'/themes/:id',
+    component:App.components.Themes,
+    name:'themes'
+  },
+  {
     path:'/comments/:id',
     component:App.components.Comments,
     name:'comments'

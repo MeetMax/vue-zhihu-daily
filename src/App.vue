@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+      <router-view></router-view>
   </div>
 </template>
 
@@ -15,6 +15,7 @@ import BeforeNews from './components/before-news.vue';
 import vDetails from './view/details.vue';
 import bottomBar from './components/bottom-bar.vue';
 import Comments from './view/comments.vue';
+import Themes from './view/themes.vue';
 export default {
   name: 'app',
   components: {
@@ -27,7 +28,8 @@ export default {
     BeforeNews,
     vDetails,
     bottomBar,
-    Comments
+    Comments,
+    Themes
   }
 }
 </script>

@@ -46,14 +46,10 @@ export default{
     font-size: 14px;
     line-height: 24px;
     width: 80%;
-    width: calc(100% - 120px);
-    width:-moz-calc(100% - 120px);
-    width:-webkit-calc(100% - 120px);
     text-align: left;
   }
   .thumb{
-    width:80px;
-    height: 80px;
+    width:17%;
     float: right;
     img{
       width: 100%;

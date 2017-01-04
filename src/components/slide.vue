@@ -4,6 +4,8 @@
         <div class="swiper-slide"  v-for="item in news"
              :style="{background: 'url('+replace(item.image)+') no-repeat',
           backgroundSize:'100%',backgroundPosition:'50%'}">
+          <router-link :to="{name:'details',params:{id:item.id}}"></router-link>
+          <p>{{item.title}}</p>
         </div>
 	    </div>
 	    <div class="swiper-pagination"></div>
@@ -52,7 +54,7 @@ import Swiper from 'swiper';
 .swiper-container{
 	width:100%;
 	height:230px;
-  height: 70vw;
+  height: 50vw;
 	.swiper-slide{
 		width:100%;
 		height:100%;
@@ -64,5 +66,27 @@ import Swiper from 'swiper';
 .swiper-pagination{
 	width:100%;
 	height:10px;
+}
+.swiper-slide{
+  position: relative;
+  p{
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    left: 0;
+    padding: 0 15px 0 15px;
+    font-size: 18px;
+    box-sizing: border-box;
+    text-align: left;
+  }
+  a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
 }
 </style>
