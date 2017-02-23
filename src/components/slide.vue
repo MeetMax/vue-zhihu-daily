@@ -53,8 +53,7 @@ import Swiper from 'swiper';
 @import "../assets/swiper.min.css";
 .swiper-container{
 	width:100%;
-	height:230px;
-  height: 50vw;
+	height:250px;
 	.swiper-slide{
 		width:100%;
 		height:100%;

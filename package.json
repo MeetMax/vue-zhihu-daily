@@ -12,7 +12,11 @@
     "test": "npm run unit && npm run e2e"
   },
   "dependencies": {
-    "vue": "^2.1.0"
+    "axios": "^0.15.3",
+    "swiper": "^3.4.1",
+    "vue": "^2.1.0",
+    "vue-router": "^2.2.1",
+    "vuex": "^2.1.2"
   },
   "devDependencies": {
     "autoprefixer": "^6.4.0",
