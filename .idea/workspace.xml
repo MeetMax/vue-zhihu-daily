@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f60037c1-7e85-420d-8c3d-d43ca87550b5" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ZhihuDailyPurify.wiki" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vue-zhihu-daily.iml" afterPath="$PROJECT_DIR$/.idea/vue-zhihu-daily.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/slide.vue" afterPath="$PROJECT_DIR$/src/components/slide.vue" />
     </list>
     <manually-removed-from-ignored>
       <directory path="$PROJECT_DIR$/temp/" />
